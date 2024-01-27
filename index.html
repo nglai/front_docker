@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front da api alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <span>Cadastro das notas dos alunos</span>
+          <button onclick="openModal()" id="new">Incluir</i></button>
+        </div>
+    
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Nota primeiro semestre</th>
+                <th>Nota segundo semestre</th>
+                <th>Professor</th>
+                <th>Numero da classe</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>José</th>
+                    <th>15</th>
+                    <th>9</th>
+                    <th>7</th>
+                    <th>Mário</th>
+                    <th>123</th>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="modal-container">
+          <div class="modal">
+            <form>
+              <label for="m-nome">Nome</label>
+              <input id="m-nome" type="text" required />              
+              
+              <label for="m-idade">Idade</label>
+              <input id="m-idade" type="number" required />
+      
+              <label for="m-nota1">Nota primero semestre</label>
+              <input id="m-nota1" type="number" required />
+              
+              <label for="m-nota2">Nota segundo semestre</label>
+              <input id="m-nota2" type="number" required />
+      
+              <label for="m-professor">Professor</label>
+              <input id="m-professor" type="text" required />  
+
+              <label for="m-nclasse">Número da classe</label>
+              <input id="m-nclasse" type="number" required />
+
+              <button id="btnSalvar">Salvar</button>
+            </form>
+          </div>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
